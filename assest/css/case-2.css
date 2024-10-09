@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 250px;
+  height: 250px;
+  background-color: gray;
+  border-radius: 50%;
+  border-top: 12px solid red;
+  border-left: 12px solid white;
+  border-right: 12px solid white;
+  border-bottom: 12px solid white;
+}
+
+.circle:hover {
+  transform: rotate(360deg);
+  transition: transform 1.5s ease-in;
+}
+h2 {
+  margin: 0;
+  text-align: center;
+  color: white;
+  position: absolute;
+}
