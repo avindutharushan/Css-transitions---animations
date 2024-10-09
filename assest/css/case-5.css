@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.container {
+  height: 100vh;
+  width: 400vw;
+  display: flex;
+  flex-direction: row-reverse;
+  animation: slider 24s ease 0s infinite;
+  position: relative;
+  left: -300vw;
+}
+div {
+  width: 25%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div:nth-of-type(1) {
+  background-image: url(/assest/images/case-5/image_01.jpg);
+}
+div:nth-of-type(2) {
+  background-image: url(/assest/images/case-5/image_02.jpg);
+}
+div:nth-of-type(3) {
+  background-image: url(/assest/images/case-5/image_03.jpg);
+}
+div:nth-of-type(4) {
+  background-image: url(/assest/images/case-5/image_04.jpg);
+}
+@keyframes slider {
+  0% {
+    left: -300vw;
+  }
+  10% {
+    left: -300vw;
+  }
+  14% {
+    left: -200vw;
+  }
+  27% {
+    left: -200vw;
+  }
+  31% {
+    left: -100vw;
+  }
+  43% {
+    left: -100vw;
+  }
+  48% {
+    left: 0vw;
+  }
+  60% {
+    left: 0vw;
+  }
+  64% {
+    left: -100vw;
+  }
+  77% {
+    left: -100vw;
+  }
+  81% {
+    left: -200vw;
+  }
+  93% {
+    left: -200vw;
+  }
+  98% {
+    left: -300vw;
+  }
+}
