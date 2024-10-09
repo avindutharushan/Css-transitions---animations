@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+div {
+  width: 160px;
+  height: 60px;
+  background-color: blue;
+  border-radius: 10px;
+  animation: rotate 8s ease-in-out 0s infinite;
+}
+@keyframes rotate {
+  0% {
+    background-color: blue;
+    transform: translate(0, 0) rotate(0deg);
+  }
+  12.5% {
+    background-color: yellow;
+    transform: translate(calc(100vw - 160px), 0) rotate(180deg);
+  }
+  25% {
+    background-color: red;
+    transform: translate(calc(100vw - 160px), calc(100vh - 120px))
+      rotate(360deg);
+  }
+  37.5% {
+    background-color: rgb(255, 0, 85);
+    transform: translate(0, calc(100vh - 120px)) rotate(180deg);
+  }
+  50% {
+    background-color: orange;
+    transform: translate(0, 0) rotate(360deg);
+  }
+  62.5% {
+    background-color: rgb(255, 0, 85);
+    transform: translate(0, calc(100vh - 120px)) rotate(180deg);
+  }
+  75% {
+    background-color: red;
+    transform: translate(calc(100vw - 160px), calc(100vh - 120px))
+      rotate(360deg);
+  }
+  87.5% {
+    background-color: yellow;
+    transform: translate(calc(100vw - 160px), 0) rotate(180deg);
+  }
+  100% {
+    background-color: blue;
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
