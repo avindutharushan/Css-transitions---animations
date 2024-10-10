@@ -8,8 +8,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   animation: slider 24s ease 0s infinite;
-  position: relative;
-  left: -300vw;
+  transform: translateX(-300vw);
 }
 div {
   width: 25%;
@@ -33,42 +32,42 @@ div:nth-of-type(4) {
 }
 @keyframes slider {
   0% {
-    left: -300vw;
+    transform: translateX(-300vw);
   }
   10% {
-    left: -300vw;
+    transform: translateX(-300vw);
   }
   14% {
-    left: -200vw;
+    transform: translateX(-200vw);
   }
   27% {
-    left: -200vw;
+    transform: translateX(-200vw);
   }
   31% {
-    left: -100vw;
+    transform: translateX(-100vw);
   }
   43% {
-    left: -100vw;
+    transform: translateX(-100vw);
   }
   48% {
-    left: 0vw;
+    transform: translateX(0);
   }
   60% {
-    left: 0vw;
+    transform: translateX(0);
   }
   64% {
-    left: -100vw;
+    transform: translateX(-100vw);
   }
   77% {
-    left: -100vw;
+    transform: translateX(-100vw);
   }
   81% {
-    left: -200vw;
+    transform: translateX(-200vw);
   }
   93% {
-    left: -200vw;
+    transform: translateX(-200vw);
   }
   98% {
-    left: -300vw;
+    transform: translateX(-300vw);
   }
 }
